@@ -25,3 +25,6 @@ accounts-facebook
 accounts-twitter
 accounts-meetup
 accounts-github
+react
+react-template-helper
+reactrouter:react-router
