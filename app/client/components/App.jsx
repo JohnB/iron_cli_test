@@ -24,6 +24,7 @@ App = React.createClass({
                     {this.renderTasks()}
                 </ul>
                 <AddPlayer player={{name: 'JohnB', email: 'john.baylor@gmail.com'}} />
+                <SuggestDate />
             </div>
         );
     }

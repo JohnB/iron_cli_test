@@ -2,8 +2,8 @@ AddPlayer = React.createClass({
     propTypes: {
         player: React.PropTypes.object.isRequired
     },
-    AddThisPlayer: function(event) {
-        console.log('AddThisPlayer?');
+    addThisPlayer: function(event) {
+        console.log('addThisPlayer?');
         console.log(this.state);
     },
     handleNameChange: function(event) {
@@ -30,7 +30,7 @@ AddPlayer = React.createClass({
                         />
                 </span>
                 <span className='addPlayerButton'>
-                    <button onClick={this.AddThisPlayer}>Add Player</button>
+                    <button onClick={this.addThisPlayer}>Add Player</button>
                 </span>
             </div>
         );
