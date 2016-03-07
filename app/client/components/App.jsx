@@ -23,6 +23,7 @@ App = React.createClass({
                 <ul>
                     {this.renderTasks()}
                 </ul>
+                <AddPlayer player={{name: 'JohnB', email: 'john.baylor@gmail.com'}} />
             </div>
         );
     }

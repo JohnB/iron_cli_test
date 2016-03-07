@@ -8,6 +8,7 @@ const createHistory = ReactRouter.history.createHistory;
 
 const routes = (
   <Route path="/" component={AppLoading}>
+    <Route path="/add_player" component={AddPlayer} />
     <Route path="*" component={AppNotFound} />
   </Route>
 );
