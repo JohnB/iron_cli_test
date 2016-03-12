@@ -12,19 +12,25 @@ App = React.createClass({
             return <Task key={task._id} task={task} />;
         });
     },
+    playerAdded(event) {
+        console.log(event);
+        console.log(this.refs.foobar);
+        console.log(this.refs.foobar.props.player);
+        this.setState({player: this.refs.foobar.props.player});
+        console.log(this.state);
+    },
 
     render() {
         return (
             <div className="container">
-                <header>
-                    <h1>something important here</h1>
-                </header>
-
-                <ul>
-                    {this.renderTasks()}
-                </ul>
-                <AddPlayer player={{name: 'JohnB', email: 'john.baylor@gmail.com'}} />
+                <AddPlayer
+                    ref="foobar"
+                    player={{name: 'JohnB', email: 'john.baylor@gmail.com'}}
+                    />
                 <SuggestDate />
+                <span className='showData'>
+                    <button onClick={this.playerAdded}>test Player added</button>
+                </span>
             </div>
         );
     }
